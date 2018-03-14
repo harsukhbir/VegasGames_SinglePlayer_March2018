@@ -1,0 +1,44 @@
+{
+    "com.appsflyer.phonegap.plugins.appsflyer": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/AppsFlyerSDK/PhoneGap.git",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-device": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-device"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-inappbrowser": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-inappbrowser@1.5.0"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "com.red_folder.phonegap.plugin.backgroundservice": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Red-Folder/bgs-core.git",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "com.matd.coolplugin": {
+        "source": {
+            "type": "local",
+            "path": "/Users/kaushaljsathwara/Documents/Z_Demo/HelloToast/CoolPlugin"
+        },
+        "is_top_level": true,
+        "variables": {}
+    }
+}

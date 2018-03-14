@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <title>You Spin Me Right Round</title>
+    <head>
+        <style>
+			body {
+				background: #000000;
+			}
+		
+		</style>
+    
+        <script src = "main.js"></script>
+        <script src = "wheel_graphics.js"></script>
+    </head>    
+    <body>
+        <canvas id = "game" width="1200" height = "720"></canvas>
+        <script>
+            console.log("starting");
+            var img_dir = "../../img/";
+            begin();
+            var canvas = document.getElementById("game");
+            var context = canvas.getContext("2d");
+            context.imageSmoothingEnabled = false;
+            var drawing;
+            //var drawing = setInterval(draw_wheel, 1);
+            function wheel_stop(){
+                console.log("Stopping!");
+                clearInterval(drawing);
+            }
+        </script>
+    </body>
+
+
+
+
+</html>

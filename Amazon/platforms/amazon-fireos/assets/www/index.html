@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <meta charset="UTF-8">
+    <title>Vegas Games Singleplayer</title>
+    <style>
+        @font-face {
+            font-family: 'POETSENONE-REGULAR';
+            src: url('POETSENONE-REGULAR.TTF');
+        }
+
+        @font-face {
+            font-family: 'Dimbo-Regular';
+            src: url('Dimbo_Regular.ttf');
+        }
+
+        body {
+            background: #000000;
+        }
+
+        canvas {
+            z-index: -1;
+            position: absolute;
+        }
+
+        form {
+            z-index: 100;
+            position: absolute;
+            visibility: hidden;
+        }
+
+        input {
+            z-index: 101;
+            position: absolute;
+        }
+
+        .overflowDiv {
+            overflow-y: scroll;
+        }
+
+        .canvasOverflow {
+            /* width: 100% !important;
+            height: 72% !important;
+            overflow-y: scroll !important;
+            display: block; */
+            padding-bottom: 555px;
+            /* padding-bottom: 100px; */
+            /* display:inline-block; */
+            /* width: 100%; */
+        }
+
+        .login_forms {
+            overflow-y: scroll !important;
+        }
+    </style>
+    <script id='flux'></script>
+</head>
+
+<body onresize="resize_canvas();" id="body">
+    <!--
+        <div hidden>
+        <video id="sparkle_vid" autoplay = "false" loop = "false" controls = "false" src = "img/380nm_particleSpirals_pink.mp4" type = "video/mp4"/>
+        </div>
+        -->
+    <!-- style="left: 6.5px; display: block; top: 0px; overflow-y: scroll !important; height: 114% !important;" -->
+
+    <canvas id="buffer" width="100%" height="100%"></canvas>
+    <div class="overflowDiv">
+        <canvas id="game" width="100%" height="100%"></canvas>
+    </div>
+
+    <div id="loginFormId">
+        <form id="login_form">
+            <input type="text" id="login_username" onclick="formUser();"></input>
+            <input type="text" id="login_password" onclick="formUser();"></input>
+        </form>
+    </div>
+
+    <form id="create_form">
+        <input type="text" id="create_username" onclick="signupInputFun(0)"></input>
+        <input type="text" id="create_email" onclick="signupInputFun(1)"></input>
+        <input type="text" id="create_password" onclick="signupInputFun(2)"></input>
+        <input type="text" id="create_password_again" onclick="signupInputFun(3)"></input>
+        <input type="text" id="create_fullname" onclick="signupInputFun(4)"></input>
+    </form>
+
+    <script>
+        function formUser() {
+            document.getElementById('body').className = 'canvasOverflow';
+            $('#body').scrollTop(100);
+        }
+
+        window.addEventListener('native.keyboardhide', function (e) {
+            setTimeout(function () {
+                $('#body').removeClass('canvasOverflow');
+            }, 100);
+        });
+
+        function signupInputFun(fields) {
+            if (fields == 0) {
+                document.getElementById('body').className = 'canvasOverflow';
+            }
+            if (fields == 1) {
+                document.getElementById('body').className = 'canvasOverflow';
+                $('#body').scrollTop(50);
+            }
+            if (fields == 2) {
+                document.getElementById('body').className = 'canvasOverflow';
+                $('#body').scrollTop(100);
+            }
+            if (fields == 3) {
+                document.getElementById('body').className = 'canvasOverflow';
+                $('#body').scrollTop(150);
+            }
+            if (fields == 4) {
+                document.getElementById('body').className = 'canvasOverflow';
+                $('#body').scrollTop(200);
+            }
+        }
+    </script>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <!--        
+        -->
+    <script src="js/tapjoy_controller.js"></script>
+    <script src="openfb.js"></script>
+    <script src="jquery-2.1.4.js"></script>
+    <script src="purchaseStore.js"></script>
+    <script src="js/store.js"></script>
+    <script src="js/global.js"></script>
+    <script src="js/load_screen.js"></script>
+    <script src="js/storage_manager.js"></script>
+    <script src="js/music.js"></script>
+
+    <script src="js/session_info.js"></script>
+    <script src="js/facebook.js"></script>
+    <script src="js/language_loaders.js"></script>
+    <script src="js/word_translations.js"></script>
+    <script src="js/purchase.js"></script>
+    <script src="js/lobby/vars.js"></script>
+
+    <!--
+            Video Poker
+        -->
+    <script src="js/vp/vars.js"></script>
+
+    <!--
+            Jacks or better
+        -->
+    <script src="js/job/vars.js"></script>
+
+    <!--
+            Jokers Wild
+        -->
+
+    <script src="js/jaw/vars.js"></script>
+
+    <!--
+            Bingo
+        -->
+    <script src="js/bingo/vars.js"></script>
+
+
+    <script src="script_swapper.js"></script>
+
+    <!-- Impinge Solutions Work -->
+
+    <!-- END - Impinge Solutions Work -->
+
+    <script>
+        load_main_scripts();
+        StatusBar.hide();
+            //game_begin();
+    </script>
+
+    <script type="text/javascript" src="js/appsflyer.js"></script>
+    <script type="text/javascript" src="js/AppsFlyer_Events.js"></script>
+    <script type="text/javascript" src="js/SuperSonic.js"></script>
+
+    <script type="text/javascript">
+
+        setTimeout(function () {
+
+            var Session_Length = "Session Length Times Out After 15 Seconds";
+            var Session_Length_No = {
+                "Session Length Times Out After 15 Seconds_No": "1"
+            };
+            window.plugins.appsFlyer.trackEvent(Session_Length, Session_Length_No);
+        }, 15000);
+
+    </script>
+
+
+    <script type="text/javascript">
+
+            // Ads
+
+             // var androidKey = "465b1a0d";
+             //    var iosKey = "3efd0b09";
+             //    alert("0");
+             //    alert(Date.now());
+             //    var ssAds = new SupersonicAds(cordova.platformId === 'ios' ? iosKey : androidKey, 'demo_' + Date.now());
+             //    alert("1");
+             //  // var ssAds = new SupersonicAds("465b1a0d", 'demo_' + Date.now());
+             //        alert(Date.now());
+             //    // show a rewarded ad
+             //    ssAds.showRewardedAd();
+
+             //    // show a rewarded ad for placement RightHere
+             //    ssAds.showRewardedAd("RightHere");
+
+             //    // show an offerwall
+             //    ssAds.showOfferWall();
+
+             //    // show an interstitial
+             //    ssAds.showInterstitial();
+
+             //    // give em some credit
+             //    window.addEventListener("offerwallCreditReceived", function(e) {
+
+             //        var credit = e.credit;
+
+             //        // The number of credits the user has earned.
+             //        console.log(credit.amount);
+
+             //        // The total number of credits ever earned by the user.
+             //        console.log(credit.total):
+
+             //        // estimated flag is the same as totalCreditsFlag 
+             //        // In some cases, we won’t be able to provide the exact
+             //        // amount of credits since the last event (specifically if the user clears
+             //        // the app’s data). In this case the ‘credits’ will be equal to the ‘totalCredits’,
+             //        // and this flag will be ‘true’.
+             //        console.log(credit.estimated);
+
+             //    }, false);
+
+             //    // reward your users
+             //    window.addEventListener("rewardedVideoRewardReceived", function(e) {
+
+             //        var placement = e.placement;
+             //        console.log("superSonic Id"+placement.id); // only available on android
+             //        console.log("superSonic name"+placement.name);
+             //        console.log("superSonic reward"+placement.reward);
+             //        console.log("superSonic amount"+placement.amount);
+             //    }, false);
+
+            // End Ads
+    </script>
+
+    <!--<button id="rewarded" class="disabled">Show Rewarded Video</button>-->
+    <!--<button id="interstitial" class="disabled">Show Interstitial Ad</button>-->
+    <button style="display: none;" id="offerWall">Show Offer Wall</button>
+    <!-- <textarea id="eventLog" style="display: none;"></textarea> -->
+    <textarea style="display: none;" id="eventLog"></textarea>
+
+</body>
+
+
+<div id="status">
+</div>
+
+</html>

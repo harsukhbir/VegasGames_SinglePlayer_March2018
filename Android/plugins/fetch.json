@@ -1,0 +1,61 @@
+{
+  "cordova-plugin-whitelist": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-whitelist@1"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "com.appsflyer.phonegap.plugins.appsflyer": {
+    "source": {
+      "type": "git",
+      "url": "https://github.com/AppsFlyerSDK/PhoneGap.git",
+      "subdir": "."
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-device": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-device"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-inappbrowser": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-inappbrowser@1.5.0"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cc.fovea.cordova.purchase": {
+    "source": {
+      "type": "registry",
+      "id": "cc.fovea.cordova.purchase"
+    },
+    "is_top_level": true,
+    "variables": {
+      "BILLING_KEY": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgMiQgkHJ5BRJe+4x/l2NhKP+UhXalxAbH+JM/lWYGIy/45sWfnuRTxYA+Z3HBJOsBQrR7mGAy0A8qdE84FOQ+7e6b4rI+ICotP861SjbiVtyUG9ipVRQe2TBoug3EZtih4guAw1Hbbx0PlnJU38V8vynGfAGowZRjRgU6oSiRLn9Aken5iG+UWpQhzR81MaSGrZzlr4qNCXvHa8Xf+UJNb8zWLFnnIrmpTwH8w11ZhVRYpznvEVp99EGSnFPlYZ8cOdhDnyTracKZ3U6HCZ592T0KYEZUYQ1WKsMH3VpOtS/e6fNupSEEDEbBbc83YqvKnaf87us6ET/JlyzL13XJQIDAQAB"
+    }
+  },
+  "cordova-plugin-statusbar": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-statusbar@2.2.0"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "ionic-plugin-keyboard": {
+    "source": {
+      "type": "registry",
+      "id": "ionic-plugin-keyboard"
+    },
+    "is_top_level": true,
+    "variables": {}
+  }
+}

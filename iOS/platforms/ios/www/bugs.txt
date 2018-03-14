@@ -1,0 +1,32 @@
+Roulette wheel file is too large
+roulette wheel artifacts
+
+VP, Keno, pipeline resource loading
+
+
+Roulette Win Text Spacing
+Keno Resizing?
+
+Keno Store opens??????????
+
+
+MoneyWheel multipliers off?
+    Maybe only on front end?
+
+Keno add error
+    
+    
+Keno Number Sounds
+MoneyWheel Sounds
+Roulette Sounds
+
+    
+    
+//////////////
+//UPDATES!!!//
+//////////////
+
+Merge Games into Objects
+	Should help with variable scoping
+Merge Video Poker Games
+	Obviously a stretch goal with a low priority

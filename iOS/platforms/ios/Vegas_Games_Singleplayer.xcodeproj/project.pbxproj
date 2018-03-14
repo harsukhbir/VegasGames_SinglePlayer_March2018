@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
+		0DEBD5CE91C04AF98BD7A0C3 /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = B804880B5B704BBFB9303820 /* CDVDevice.m */; };
+		155FA975688846EAAFC622C2 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D7D69403164F3EB942D5B3 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1FE8337CBA604E74943B1430 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F7E2971B890145DB8AF4EBA0 /* libz.dylib */; };
+		2A5432FDB2A241D88A3D62C7 /* AppsFlyerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DDF4F03E3814E25BED556BC /* AppsFlyerPlugin.m */; };
+		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; };
+		302D95F114D2391D003F00A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D95EF14D2391D003F00A1 /* MainViewController.m */; };
+		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
+		330F0813F46245E797A9BAD4 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3BDA6A209A94303AB1D25C7 /* CoreTelephony.framework */; };
+		352086EB804B4D3FB1EEB47B /* CDVInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5DFD5C5CFC425498F9E7D4 /* CDVInAppBrowser.m */; };
+		361887D00B4644EFAF2CD47D /* SupersonicAdsPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = D36D91D5DEE24805A184809B /* SupersonicAdsPlugin.m */; };
+		4BEFDDA0AFEC47B4B453A0D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA842F06C63B4CFE8A4B2671 /* Foundation.framework */; };
+		51FE81961DB93D1E00170570 /* Default-Landscape-736h.png in Resources */ = {isa = PBXBuildFile; fileRef = 51FE81951DB93D1E00170570 /* Default-Landscape-736h.png */; };
+		51FE81A21DB94AE600170570 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51FE81A11DB94AE600170570 /* Launch Screen.storyboard */; };
+		566A2FC4CB5E4FBD98FA4F4C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D599C1C87FF34A9A98EB2A21 /* AVFoundation.framework */; };
+		6BF8DFABB8CF41DFA8F10F28 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7FC8A14C7544F43AAD9FFEB /* StoreKit.framework */; };
+		7766FB1C2F8B40F1B9299A9C /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3E49E8958DD475DB63DA6FA /* CoreVideo.framework */; };
+		91F823105BBE4F628DCCF0C7 /* Supersonic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA9638441D7485FA5582694 /* Supersonic.framework */; };
+		B7CE76806028453F9AB54C95 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D630C9D61EA547838C41A134 /* Security.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		C9C90EEB2C944D6B8DCC7F4B /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AAA5BDD661F46289FF08624 /* iAd.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		D44F1FF57A264984AABA1D63 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A0C45837B045759F9F0D65 /* SystemConfiguration.framework */; };
+		DCE54206C37A45BABE0AA85B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1370B63A5BA4F829056639F /* QuartzCore.framework */; };
+		E427BE1BC0044E32A5F60507 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8F68D6F766E4FF79658171F /* CoreMedia.framework */; };
+		E68427A9C9CD46F6BD55829B /* AppAvailability.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BAE098A034B4C8C8EBFC0DF /* AppAvailability.m */; };
+		EC9B73631B9341EFB5DEE0E2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FFA463843314A4CA08B711E /* CoreLocation.framework */; };
+		ED2B537EC82F41B8B130819B /* libAppsFlyerLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DA49D7C86C4DFB8D080C0D /* libAppsFlyerLib.a */; };
+		F559FD97C2D84F45A489AA60 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CB9DEDE65DA41C59D5BD552 /* CFNetwork.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		301BF534109A57CC0062928A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = CordovaLib;
+		};
+		301BF550109A68C00062928A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = CordovaLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0207DA571B56EA530066E2B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Vegas_Games_Singleplayer/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		03DA49D7C86C4DFB8D080C0D /* libAppsFlyerLib.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; name = libAppsFlyerLib.a; path = Vegas_Games_Singleplayer/Plugins/com.appsflyer.phonegap.plugins.appsflyer/libAppsFlyerLib.a; sourceTree = "<group>"; };
+		100A05C3A5714D70B44EF308 /* AppsFlyerPlugin.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = AppsFlyerPlugin.h; path = com.appsflyer.phonegap.plugins.appsflyer/AppsFlyerPlugin.h; sourceTree = "<group>"; };
+		1AAA5BDD661F46289FF08624 /* iAd.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* Vegas_Games_Singleplayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vegas_Games_Singleplayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2BAE098A034B4C8C8EBFC0DF /* AppAvailability.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = AppAvailability.m; path = "cordova-plugin-appavailability/AppAvailability.m"; sourceTree = "<group>"; };
+		301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
+		301BF56E109A69640062928A /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
+		302D95EE14D2391D003F00A1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		302D95EF14D2391D003F00A1 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		302D95F014D2391D003F00A1 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		3047A50F1AB8059700498E2A /* build-debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-debug.xcconfig"; path = "cordova/build-debug.xcconfig"; sourceTree = SOURCE_ROOT; };
+		3047A5101AB8059700498E2A /* build-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-release.xcconfig"; path = "cordova/build-release.xcconfig"; sourceTree = SOURCE_ROOT; };
+		3047A5111AB8059700498E2A /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = build.xcconfig; path = cordova/build.xcconfig; sourceTree = SOURCE_ROOT; };
+		32CA4F630368D1EE00C91783 /* Vegas_Games_Singleplayer-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Vegas_Games_Singleplayer-Prefix.pch"; sourceTree = "<group>"; };
+		3BA9638441D7485FA5582694 /* Supersonic.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = Supersonic.framework; path = "Vegas_Games_Singleplayer/Plugins/cordova-plugin-supersonicads/Supersonic.framework"; sourceTree = "<group>"; };
+		3FFA463843314A4CA08B711E /* CoreLocation.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		51FE81931DB93D0F00170570 /* Default-Landscape-736h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape-736h.png"; path = "Images.xcassets/Default-Landscape-736h.png"; sourceTree = "<group>"; };
+		51FE81951DB93D1E00170570 /* Default-Landscape-736h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape-736h.png"; path = "Vegas_Games_Singleplayer/Images.xcassets/Default-Landscape-736h.png"; sourceTree = SOURCE_ROOT; };
+		51FE819B1DB9497900170570 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "Images.xcassets/Launch Screen.storyboard"; sourceTree = "<group>"; };
+		51FE81A11DB94AE600170570 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "Vegas_Games_Singleplayer/Images.xcassets/Launch Screen.storyboard"; sourceTree = SOURCE_ROOT; };
+		60A0C45837B045759F9F0D65 /* SystemConfiguration.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		6649871B015649DCBA49C151 /* SupersonicAdsPlugin.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = SupersonicAdsPlugin.h; path = "cordova-plugin-supersonicads/SupersonicAdsPlugin.h"; sourceTree = "<group>"; };
+		7DDF4F03E3814E25BED556BC /* AppsFlyerPlugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = AppsFlyerPlugin.m; path = com.appsflyer.phonegap.plugins.appsflyer/AppsFlyerPlugin.m; sourceTree = "<group>"; };
+		8CB9DEDE65DA41C59D5BD552 /* CFNetwork.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		8D1107310486CEB800E47090 /* Vegas_Games_Singleplayer-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Vegas_Games_Singleplayer-Info.plist"; path = "Vegas_Games_Singleplayer/Vegas_Games_Singleplayer-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = SOURCE_ROOT; };
+		8F5DFD5C5CFC425498F9E7D4 /* CDVInAppBrowser.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVInAppBrowser.m; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.m"; sourceTree = "<group>"; };
+		9499BD5A74BA471C8423E706 /* AppAvailability.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = AppAvailability.h; path = "cordova-plugin-appavailability/AppAvailability.h"; sourceTree = "<group>"; };
+		A3E49E8958DD475DB63DA6FA /* CoreVideo.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		A5D7D69403164F3EB942D5B3 /* AdSupport.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		AA842F06C63B4CFE8A4B2671 /* Foundation.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B804880B5B704BBFB9303820 /* CDVDevice.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVDevice.m; path = "cordova-plugin-device/CDVDevice.m"; sourceTree = "<group>"; };
+		C1370B63A5BA4F829056639F /* QuartzCore.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D36D91D5DEE24805A184809B /* SupersonicAdsPlugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = SupersonicAdsPlugin.m; path = "cordova-plugin-supersonicads/SupersonicAdsPlugin.m"; sourceTree = "<group>"; };
+		D599C1C87FF34A9A98EB2A21 /* AVFoundation.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D630C9D61EA547838C41A134 /* Security.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		DF91E269B9C94B86A1144C92 /* CDVInAppBrowser.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVInAppBrowser.h; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.h"; sourceTree = "<group>"; };
+		E41BB5F059DE48D5949D9AD5 /* AppsFlyerTracker.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = AppsFlyerTracker.h; path = com.appsflyer.phonegap.plugins.appsflyer/AppsFlyerTracker.h; sourceTree = "<group>"; };
+		E7FC8A14C7544F43AAD9FFEB /* StoreKit.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
+		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
+		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		ED84DFC62931465DB4C03A0A /* CDVDevice.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVDevice.h; path = "cordova-plugin-device/CDVDevice.h"; sourceTree = "<group>"; };
+		F3BDA6A209A94303AB1D25C7 /* CoreTelephony.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		F7E2971B890145DB8AF4EBA0 /* libz.dylib */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = Vegas_Games_Singleplayer/config.xml; sourceTree = "<group>"; };
+		F8F68D6F766E4FF79658171F /* CoreMedia.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
+				ED2B537EC82F41B8B130819B /* libAppsFlyerLib.a in Frameworks */,
+				155FA975688846EAAFC622C2 /* AdSupport.framework in Frameworks */,
+				C9C90EEB2C944D6B8DCC7F4B /* iAd.framework in Frameworks */,
+				B7CE76806028453F9AB54C95 /* Security.framework in Frameworks */,
+				91F823105BBE4F628DCCF0C7 /* Supersonic.framework in Frameworks */,
+				4BEFDDA0AFEC47B4B453A0D5 /* Foundation.framework in Frameworks */,
+				566A2FC4CB5E4FBD98FA4F4C /* AVFoundation.framework in Frameworks */,
+				E427BE1BC0044E32A5F60507 /* CoreMedia.framework in Frameworks */,
+				7766FB1C2F8B40F1B9299A9C /* CoreVideo.framework in Frameworks */,
+				DCE54206C37A45BABE0AA85B /* QuartzCore.framework in Frameworks */,
+				D44F1FF57A264984AABA1D63 /* SystemConfiguration.framework in Frameworks */,
+				F559FD97C2D84F45A489AA60 /* CFNetwork.framework in Frameworks */,
+				1FE8337CBA604E74943B1430 /* libz.dylib in Frameworks */,
+				6BF8DFABB8CF41DFA8F10F28 /* StoreKit.framework in Frameworks */,
+				EC9B73631B9341EFB5DEE0E2 /* CoreLocation.framework in Frameworks */,
+				330F0813F46245E797A9BAD4 /* CoreTelephony.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				302D95EE14D2391D003F00A1 /* MainViewController.h */,
+				302D95EF14D2391D003F00A1 /* MainViewController.m */,
+				302D95F014D2391D003F00A1 /* MainViewController.xib */,
+				1D3623240D0F684500981E51 /* AppDelegate.h */,
+				1D3623250D0F684500981E51 /* AppDelegate.m */,
+			);
+			name = Classes;
+			path = Vegas_Games_Singleplayer/Classes;
+			sourceTree = SOURCE_ROOT;
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* Vegas_Games_Singleplayer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				EB87FDF41871DAF40020F90C /* config.xml */,
+				EB87FDF31871DA8E0020F90C /* www */,
+				EB87FDF11871DA420020F90C /* Staging */,
+				301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				307C750510C5A3420062BCA9 /* Plugins */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				51FE819B1DB9497900170570 /* Launch Screen.storyboard */,
+				51FE81931DB93D0F00170570 /* Default-Landscape-736h.png */,
+				32CA4F630368D1EE00C91783 /* Vegas_Games_Singleplayer-Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+				ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */,
+			);
+			name = "Other Sources";
+			path = Vegas_Games_Singleplayer;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				51FE81951DB93D1E00170570 /* Default-Landscape-736h.png */,
+				0207DA571B56EA530066E2B4 /* Images.xcassets */,
+				3047A50E1AB8057F00498E2A /* config */,
+				8D1107310486CEB800E47090 /* Vegas_Games_Singleplayer-Info.plist */,
+				51FE81A11DB94AE600170570 /* Launch Screen.storyboard */,
+			);
+			name = Resources;
+			path = Vegas_Games_Singleplayer/Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03DA49D7C86C4DFB8D080C0D /* libAppsFlyerLib.a */,
+				A5D7D69403164F3EB942D5B3 /* AdSupport.framework */,
+				1AAA5BDD661F46289FF08624 /* iAd.framework */,
+				D630C9D61EA547838C41A134 /* Security.framework */,
+				3BA9638441D7485FA5582694 /* Supersonic.framework */,
+				AA842F06C63B4CFE8A4B2671 /* Foundation.framework */,
+				D599C1C87FF34A9A98EB2A21 /* AVFoundation.framework */,
+				F8F68D6F766E4FF79658171F /* CoreMedia.framework */,
+				A3E49E8958DD475DB63DA6FA /* CoreVideo.framework */,
+				C1370B63A5BA4F829056639F /* QuartzCore.framework */,
+				60A0C45837B045759F9F0D65 /* SystemConfiguration.framework */,
+				8CB9DEDE65DA41C59D5BD552 /* CFNetwork.framework */,
+				F7E2971B890145DB8AF4EBA0 /* libz.dylib */,
+				E7FC8A14C7544F43AAD9FFEB /* StoreKit.framework */,
+				3FFA463843314A4CA08B711E /* CoreLocation.framework */,
+				F3BDA6A209A94303AB1D25C7 /* CoreTelephony.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		301BF52E109A57CC0062928A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				301BF535109A57CC0062928A /* libCordova.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3047A50E1AB8057F00498E2A /* config */ = {
+			isa = PBXGroup;
+			children = (
+				3047A50F1AB8059700498E2A /* build-debug.xcconfig */,
+				3047A5101AB8059700498E2A /* build-release.xcconfig */,
+				3047A5111AB8059700498E2A /* build.xcconfig */,
+			);
+			name = config;
+			sourceTree = "<group>";
+		};
+		307C750510C5A3420062BCA9 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				B804880B5B704BBFB9303820 /* CDVDevice.m */,
+				ED84DFC62931465DB4C03A0A /* CDVDevice.h */,
+				7DDF4F03E3814E25BED556BC /* AppsFlyerPlugin.m */,
+				100A05C3A5714D70B44EF308 /* AppsFlyerPlugin.h */,
+				E41BB5F059DE48D5949D9AD5 /* AppsFlyerTracker.h */,
+				2BAE098A034B4C8C8EBFC0DF /* AppAvailability.m */,
+				9499BD5A74BA471C8423E706 /* AppAvailability.h */,
+				8F5DFD5C5CFC425498F9E7D4 /* CDVInAppBrowser.m */,
+				DF91E269B9C94B86A1144C92 /* CDVInAppBrowser.h */,
+				D36D91D5DEE24805A184809B /* SupersonicAdsPlugin.m */,
+				6649871B015649DCBA49C151 /* SupersonicAdsPlugin.h */,
+			);
+			name = Plugins;
+			path = Vegas_Games_Singleplayer/Plugins;
+			sourceTree = SOURCE_ROOT;
+		};
+		EB87FDF11871DA420020F90C /* Staging */ = {
+			isa = PBXGroup;
+			children = (
+				F840E1F0165FE0F500CFE078 /* config.xml */,
+				301BF56E109A69640062928A /* www */,
+			);
+			name = Staging;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* Vegas_Games_Singleplayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Vegas_Games_Singleplayer" */;
+			buildPhases = (
+				304B58A110DAC018002A0835 /* Copy www directory */,
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				301BF551109A68C00062928A /* PBXTargetDependency */,
+			);
+			name = Vegas_Games_Singleplayer;
+			productName = Vegas_Games_Singleplayer;
+			productReference = 1D6058910D05DD3D006BFB54 /* Vegas_Games_Singleplayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = PV775E6H4V;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Vegas_Games_Singleplayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 301BF52E109A57CC0062928A /* Products */;
+					ProjectRef = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* Vegas_Games_Singleplayer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		301BF535109A57CC0062928A /* libCordova.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCordova.a;
+			remoteRef = 301BF534109A57CC0062928A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51FE81A21DB94AE600170570 /* Launch Screen.storyboard in Resources */,
+				51FE81961DB93D1E00170570 /* Default-Landscape-736h.png in Resources */,
+				302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */,
+				0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		304B58A110DAC018002A0835 /* Copy www directory */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy www directory";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "NODEJS_PATH=/usr/local/bin; NVM_NODE_PATH=~/.nvm/versions/node/`nvm version 2>/dev/null`/bin; N_NODE_PATH=`find /usr/local/n/versions/node/* -maxdepth 0 -type d 2>/dev/null | tail -1`/bin; XCODE_NODE_PATH=`xcode-select --print-path`/usr/share/xcs/Node/bin; PATH=$NODEJS_PATH:$NVM_NODE_PATH:$N_NODE_PATH:$XCODE_NODE_PATH:$PATH && node cordova/lib/copy-www-build-step.js";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
+				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
+				0DEBD5CE91C04AF98BD7A0C3 /* CDVDevice.m in Sources */,
+				2A5432FDB2A241D88A3D62C7 /* AppsFlyerPlugin.m in Sources */,
+				E68427A9C9CD46F6BD55829B /* AppAvailability.m in Sources */,
+				352086EB804B4D3FB1EEB47B /* CDVInAppBrowser.m in Sources */,
+				361887D00B4644EFAF2CD47D /* SupersonicAdsPlugin.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		301BF551109A68C00062928A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CordovaLib;
+			targetProxy = 301BF550109A68C00062928A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A50F1AB8059700498E2A /* build-debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Vegas Games, LLC (PV775E6H4V)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = PV775E6H4V;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"Vegas_Games_Singleplayer/Plugins/cordova-plugin-supersonicads\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Vegas_Games_Singleplayer/Vegas_Games_Singleplayer-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "Vegas_Games_Singleplayer/Vegas_Games_Singleplayer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Vegas_Games_Singleplayer/Plugins/com.appsflyer.phonegap.plugins.appsflyer\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vegasgames.singleplayer;
+				PRODUCT_NAME = Vegas_Games_Singleplayer;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5101AB8059700498E2A /* build-release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Vegas Games, LLC (PV775E6H4V)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = PV775E6H4V;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"Vegas_Games_Singleplayer/Plugins/cordova-plugin-supersonicads\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Vegas_Games_Singleplayer/Vegas_Games_Singleplayer-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "Vegas_Games_Singleplayer/Vegas_Games_Singleplayer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Vegas_Games_Singleplayer/Plugins/com.appsflyer.phonegap.plugins.appsflyer\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vegasgames.singleplayer;
+				PRODUCT_NAME = Vegas_Games_Singleplayer;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5111AB8059700498E2A /* build.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Vegas Games, LLC (PV775E6H4V)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Vegas Games, LLC (PV775E6H4V)";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "a68257a9-8001-4d8e-a18d-0d159a83cd19";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5111AB8059700498E2A /* build.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Vegas Games, LLC (PV775E6H4V)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Vegas Games, LLC (PV775E6H4V)";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PROVISIONING_PROFILE = "a68257a9-8001-4d8e-a18d-0d159a83cd19";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Vegas_Games_Singleplayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Vegas_Games_Singleplayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

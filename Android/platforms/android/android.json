@@ -1,0 +1,168 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "res/xml/config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"AppsFlyerPlugin\"><param name=\"android-package\" value=\"com.appsflyer.cordova.plugin.AppsFlyerPlugin\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Device\"><param name=\"android-package\" value=\"org.apache.cordova.device.Device\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"InAppBrowser\"><param name=\"android-package\" value=\"org.apache.cordova.inappbrowser.InAppBrowser\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"InAppBillingPlugin\"><param name=\"android-package\" value=\"com.smartmobilesoftware.inappbilling.InAppBillingPlugin\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"StatusBar\"><param name=\"android-package\" value=\"org.apache.cordova.statusbar.StatusBar\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Keyboard\"><param name=\"android-package\" value=\"io.ionic.keyboard.IonicKeyboard\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "AndroidManifest.xml": {
+                "parents": {
+                    "/manifest": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"com.android.vending.BILLING\" />",
+                            "count": 1
+                        }
+                    ],
+                    "/manifest/application": [
+                        {
+                            "xml": "<receiver android:exported=\"true\" android:name=\"com.appsflyer.MultipleInstallBroadcastReceiver\"><intent-filter><action android:name=\"com.android.vending.INSTALL_REFERRER\" /></intent-filter></receiver>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "res/values/billing_key_param.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<string name=\"billing_key_param\">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgMiQgkHJ5BRJe+4x/l2NhKP+UhXalxAbH+JM/lWYGIy/45sWfnuRTxYA+Z3HBJOsBQrR7mGAy0A8qdE84FOQ+7e6b4rI+ICotP861SjbiVtyUG9ipVRQe2TBoug3EZtih4guAw1Hbbx0PlnJU38V8vynGfAGowZRjRgU6oSiRLn9Aken5iG+UWpQhzR81MaSGrZzlr4qNCXvHa8Xf+UJNb8zWLFnnIrmpTwH8w11ZhVRYpznvEVp99EGSnFPlYZ8cOdhDnyTracKZ3U6HCZ592T0KYEZUYQ1WKsMH3VpOtS/e6fNupSEEDEbBbc83YqvKnaf87us6ET/JlyzL13XJQIDAQAB</string>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "io.vegasgames.singleplayer"
+        },
+        "com.appsflyer.phonegap.plugins.appsflyer": {
+            "PACKAGE_NAME": "io.vegasgames.singleplayer"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "io.vegasgames.singleplayer"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "io.vegasgames.singleplayer"
+        },
+        "cc.fovea.cordova.purchase": {
+            "BILLING_KEY": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgMiQgkHJ5BRJe+4x/l2NhKP+UhXalxAbH+JM/lWYGIy/45sWfnuRTxYA+Z3HBJOsBQrR7mGAy0A8qdE84FOQ+7e6b4rI+ICotP861SjbiVtyUG9ipVRQe2TBoug3EZtih4guAw1Hbbx0PlnJU38V8vynGfAGowZRjRgU6oSiRLn9Aken5iG+UWpQhzR81MaSGrZzlr4qNCXvHa8Xf+UJNb8zWLFnnIrmpTwH8w11ZhVRYpznvEVp99EGSnFPlYZ8cOdhDnyTracKZ3U6HCZ592T0KYEZUYQ1WKsMH3VpOtS/e6fNupSEEDEbBbc83YqvKnaf87us6ET/JlyzL13XJQIDAQAB",
+            "PACKAGE_NAME": "io.vegasgames.singleplayer"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "io.vegasgames.singleplayer"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "io.vegasgames.singleplayer"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "id": "com.appsflyer.phonegap.plugins.appsflyer.appsflyer",
+            "file": "plugins/com.appsflyer.phonegap.plugins.appsflyer/www/appsflyer.js",
+            "pluginId": "com.appsflyer.phonegap.plugins.appsflyer",
+            "clobbers": [
+                "window.plugins.appsFlyer"
+            ]
+        },
+        {
+            "id": "cordova-plugin-device.device",
+            "file": "plugins/cordova-plugin-device/www/device.js",
+            "pluginId": "cordova-plugin-device",
+            "clobbers": [
+                "device"
+            ]
+        },
+        {
+            "id": "cordova-plugin-inappbrowser.inappbrowser",
+            "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
+            "pluginId": "cordova-plugin-inappbrowser",
+            "clobbers": [
+                "cordova.InAppBrowser.open",
+                "window.open"
+            ]
+        },
+        {
+            "id": "cc.fovea.cordova.purchase.InAppBillingPlugin",
+            "file": "plugins/cc.fovea.cordova.purchase/www/store-android.js",
+            "pluginId": "cc.fovea.cordova.purchase",
+            "clobbers": [
+                "store"
+            ]
+        },
+        {
+            "id": "cordova-plugin-statusbar.statusbar",
+            "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
+            "pluginId": "cordova-plugin-statusbar",
+            "clobbers": [
+                "window.StatusBar"
+            ]
+        },
+        {
+            "id": "ionic-plugin-keyboard.keyboard",
+            "file": "plugins/ionic-plugin-keyboard/www/android/keyboard.js",
+            "pluginId": "ionic-plugin-keyboard",
+            "clobbers": [
+                "cordova.plugins.Keyboard"
+            ],
+            "runs": true
+        }
+    ],
+    "plugin_metadata": {
+        "cordova-plugin-whitelist": "1.2.2",
+        "com.appsflyer.phonegap.plugins.appsflyer": "4.0",
+        "cordova-plugin-device": "1.1.2",
+        "cordova-plugin-inappbrowser": "1.5.0",
+        "cc.fovea.cordova.purchase": "6.0.0",
+        "cordova-plugin-statusbar": "2.2.0",
+        "ionic-plugin-keyboard": "2.2.1"
+    }
+}

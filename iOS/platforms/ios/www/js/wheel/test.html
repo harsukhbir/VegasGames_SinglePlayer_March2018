@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BIG Spin Money Wheel!</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="MobileOptimized" content="width">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="format-detection" content="telephone=no">
+        <meta http-equiv="imagetoolbar" content="no">
+        <meta http-equiv="pragma" content="no-cache">
+
+        <script src = "jquery.min.js"></script>
+        <script type="text/javascript">
+            var w = (window.innerWidth > 0) ? window.innerWidth : screen.width,
+                x = 16*w/240;
+            $("body").css("font-size", x+"px");
+        </script>
+        
+        <link rel="stylesheet" type="text/css" href="defaultTheme.css" media="screen">
+        <link rel="stylesheet" type="text/css" class="themeCss" media="screen" />
+
+        <script src = "underscore-min.js"></script>
+        <script src = "createjs.min.js"></script>
+        <script src = "jquery-ui.js"></script>
+        <script src = "proton-1.0.0.min.js"></script>
+        <script src = "stacktrace.js"></script>
+        <script src = "log.js"></script>
+        <script src = "common.js"></script>
+        <script src = "minigames.js"></script>
+        <script src = "utils.js"></script>
+        <script src = "wheeloffortuneCanvas.js"></script>
+        <script src = "wheeloffortuneConfig.js"></script>
+        
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+        
+    </head>
+    
+    <body>
+        <script>
+            $(document).ready(function(){
+                if(window.location.search.indexOf("ticketId") == -1){
+                    window.location.search = "?ticketId=17592186045432&secret=&=0";
+                }
+                WheelOfFortune();
+            });
+        
+        </script>
+        <div id="sizeHelper" style="position:fixed;left:0;right:0;top:0;bottom:0;z-index:-1"></div>
+        <div id="game">	
+            <div class="msg">
+                <div class="inner"></div>
+            </div>
+            <div class="canvasContainer">
+                <canvas id="gameCanvas" width="1em" height="1em"></canvas>
+                <div id="spinBtn" class="button"></div>	        
+            </div>
+            <div class="balance"></div>
+            <div class="logo"></div>
+            <div class="lady"></div>    
+            <div class="bg2"></div>                
+            <div id="play" class="button">
+                <div>SPIN</div>
+            </div>
+        </div>
+    
+    </body>
+
+</html>

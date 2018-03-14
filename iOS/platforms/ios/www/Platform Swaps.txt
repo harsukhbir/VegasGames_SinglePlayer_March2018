@@ -1,0 +1,13 @@
+js/store.js
+	Purchase function
+
+js/lobby/main.js
+	Auto Login Functionality for facebook
+    This might not be necessary
+
+
+Enable / Disable Screen Jumps
+    lobby_vars: 110
+Enable / Disable Logout Button
+    Specific to facebook 
+    lobby_click

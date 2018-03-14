@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <meta charset="UTF-8">
+    <title>Vegas Games Singleplayer</title>
+    <style>
+        @font-face {
+            font-family: 'POETSENONE-REGULAR';
+            src: url('POETSENONE-REGULAR.TTF');
+        }
+
+        @font-face {
+            font-family: 'Dimbo-Regular';
+            src: url('Dimbo_Regular.ttf');
+        }
+
+        /* html, */
+
+        body {
+            background: #000000;
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+        }
+
+        /* body {
+            background: #000000;
+        } */
+
+        canvas {
+            z-index: -1;
+            position: absolute;
+        }
+
+        form {
+            z-index: 100;
+            position: absolute;
+        }
+
+        input {
+            z-index: 101;
+            position: absolute;
+        }
+
+        form {
+            visibility: visible;
+        }
+    </style>
+    <script id='flux'></script>
+</head>
+
+<body onresize="resize_canvas();" id="body">
+    <!--
+        <div hidden>
+        <video id="sparkle_vid" autoplay = "false" loop = "false" controls = "false" src = "img/380nm_particleSpirals_pink.mp4" type = "video/mp4"/>
+        </div>
+        -->
+    <canvas id="buffer" width="100%" height="100%"></canvas>
+
+    <canvas id="game" width="100%" height="100%"></canvas>
+    <form id="login_form">
+        <input type="text" id="login_username"></input>
+        <input type="text" id="login_password"></input>
+    </form>
+
+    <form id="create_form">
+        <input type="text" id="create_username"></input>
+        <input type="text" id="create_email"></input>
+        <input type="text" id="create_password"></input>
+        <input type="text" id="create_password_again"></input>
+        <input type="text" id="create_fullname"></input>
+    </form>
+
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <!--
+        <script type="text/javascript" src="js/plugins/appsflyer.js"></script>
+        -->
+
+    <script src="openfb.js"></script>
+    <script src="jquery-2.1.4.js"></script>
+    <script src="purchaseStore.js"></script>
+    <script src="js/store.js"></script>
+    <script src="js/global.js"></script>
+    <script src="js/load_screen.js"></script>
+    <script src="js/storage_manager.js"></script>
+    <script src="js/music.js"></script>
+
+    <script src="js/session_info.js"></script>
+    <script src="js/facebook.js"></script>
+    <script src="js/language_loaders.js"></script>
+    <script src="js/word_translations.js"></script>
+    <script src="js/purchase.js"></script>
+    <script src="js/lobby/vars.js"></script>
+
+
+    <!--
+            Video Poker
+        -->
+    <script src="js/vp/vars.js"></script>
+
+    <!--
+            Jacks or better
+        -->
+    <script src="js/job/vars.js"></script>
+
+    <!--
+            Jokers Wild
+        -->
+
+    <script src="js/jaw/vars.js"></script>
+
+    <!--
+            Bingo
+        -->
+    <script src="js/bingo/vars.js"></script>
+
+
+    <script src="script_swapper.js"></script>
+
+
+    <script>
+        $(document).ready(
+            function () {
+                /*
+                $.ajax({
+                     url: "https://singleplayer.vegasgames.com",
+                     success: function(resp){
+                            window.location = "https://singleplayer.vegasgames.com/vegasgames/static/iOS/index.html";
+                     },
+                     error: function(resp){
+                            window.location = "no_internet.html";
+                     },
+                     timeout: 500,
+                     });
+                */
+                load_main_scripts();
+                if (navigator.splashscreen) {
+                    navigator.splashscreen.hide();
+                }
+
+            });
+
+            //game_begin();
+    </script>
+
+
+    <script type="text/javascript" src="js/appsflyer.js"></script>
+    <script type="text/javascript" src="js/AppsFlyer_Events.js"></script>
+
+    <script type="text/javascript">
+        setTimeout(function () {
+            var Session_Length = "Session Length Times Out After 15 Seconds";
+            var Session_Length_No = {
+                "Session Length Times Out After 15 Seconds_No": "1"
+            };
+            window.plugins.appsFlyer.trackEvent(Session_Length, Session_Length_No);
+        }, 15000);
+    </script>
+
+
+    <!--<button id="rewarded" class="disabled">Show Rewarded Video</button>-->
+    <!--<button id="interstitial" class="disabled">Show Interstitial Ad</button>-->
+    <button style="display: none;" id="offerWall">Show Offer Wall</button>
+    <!--<textarea id="eventLog"></textarea>-->
+    <textarea style="display: none;" id="eventLog"></textarea>
+
+</body>
+
+<div id="status">
+</div>
+
+</html>

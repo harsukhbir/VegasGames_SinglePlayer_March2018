@@ -1,0 +1,30 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.vegasgames.singleplayer"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.vegasgames.singleplayer"
+        },
+        "com.appsflyer.phonegap.plugins.appsflyer": {
+            "PACKAGE_NAME": "com.vegasgames.singleplayer"
+        },
+        "cordova-plugin-appavailability": {
+            "PACKAGE_NAME": "com.vegasgames.singleplayer"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+        },
+        "cordova-plugin-supersonicads": {
+            "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+        }
+    },
+    "dependent_plugins": {}
+}
